@@ -30,7 +30,7 @@ ul,a {
 .geral {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .header {
@@ -41,6 +41,13 @@ ul,a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .menu__topo--ul {
@@ -82,8 +89,8 @@ ul,a {
 .banner__index {
     background: linear-gradient(135deg, var(--cor1) 60%, var(--cor2));
     color: white;
-    width: 100%;
-    height: 87vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -110,8 +117,8 @@ ul,a {
     background: url(/img/segudaria.png) center no-repeat;
     background-size: cover;
     margin-top: 5px;
-    min-width: 370px;
-    min-height: 98vh;
+    min-width: 368px;
+    min-height: 100%;
 }
 
 .banner__span {
@@ -119,6 +126,71 @@ ul,a {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: -45px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
 }
+
+.main {
+    margin-top: 30px;
+}
+
+.secao-simplific {
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 1px solid var(--cor0);
+}
+
+.secao-simplific__header {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    
+}
+
+.secao-simplific__card {
+    background-image: url(/img/cardred.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 450px;
+}
+
+.secao-simplific__titulo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--cor0);
+    width: 50%;
+    height: 200px;
+    margin-top: 45px;
+}
+
+.secao-simplific__titulo br {
+    padding: 35px;
+}
+
+.menu__fim {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.menu__fim--ul {
+    
+}
+
+.menu__fim--nav {
+    background: linear-gradient(135deg, var(--cor1) 100%, var(--cor2));
+    width: 50%;
+}
+
+.about {
+    background: linear-gradient(135deg, var(--cor1) 20%, var(--cor2));    
+    width: 50%;
+}
+
+.text--footer {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
